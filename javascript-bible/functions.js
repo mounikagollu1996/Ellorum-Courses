@@ -140,3 +140,29 @@
 //  // hello world;
 
 //  console.log(str3);
+
+
+/**
+ * CHALLENGE
+ * 
+ * use following built in functions:
+ * setTimeout
+ * setInterval
+ * clearInterval
+ * 
+ * you should print in console only 3 messages with two interval 2 seconds
+ * "here is msg no 1"
+ * "here is msg no 2"
+ * "here is msg no 3"
+ * "here is msg no 4"
+ * "here is msg no 5"
+ */
+let i = 1;
+const myInterval = setInterval(function() {
+    console.log('here is msg no' + i);
+    i = i + 1;
+},2000);
+
+setTimeout(function() {
+    clearInterval(myInterval);
+},10000);
